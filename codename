@@ -1,2 +1,3 @@
 #!/bin/bash
-echo "$(sort -R firstnames.txt | head -n 1) $(sort -R lastnames.txt | head -n 1)"
+CODENAMES_PATH="$(dirname $(realpath ${BASH_SOURCE[0]%/}))"
+echo "$(sort -R ${CODENAMES_PATH}/firstnames.txt | head -n 1) $(sort -R ${CODENAMES_PATH}/lastnames.txt | head -n 1)"
