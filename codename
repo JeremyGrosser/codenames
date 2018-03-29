@@ -1,0 +1,2 @@
+#!/bin/bash
+echo "$(sort -R firstnames.txt | head -n 1) $(sort -R lastnames.txt | head -n 1)"
